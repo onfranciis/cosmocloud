@@ -1,0 +1,30 @@
+.Field {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  // background-color: blue;
+  width: 100%;
+
+  input {
+    background-color: powderblue;
+    color: black;
+    min-height: 20px;
+    border: none;
+    font-size: 15px;
+    width: 15px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  p {
+    background-color: powderblue;
+    color: black;
+    min-height: 20px;
+    min-width: 150px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+}
