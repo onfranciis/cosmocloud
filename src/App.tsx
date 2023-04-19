@@ -1,6 +1,5 @@
 import "./styles/App.scss";
 import Field, { ObjectTypProperty } from "./components/Field";
-import { v4 as uuidv4 } from "uuid";
 import { useEffect } from "react";
 
 type DATAType = {
@@ -53,7 +52,7 @@ const handleFieldLoop = (Source: DATAType): any => {
     if (field.type == "Object") {
       DATAList.push(
         <Field
-          key={uuidv4()}
+          key={Date.now()}
           Title={field.title}
           Type={field.type}
           Update={(data) => {
@@ -71,7 +70,7 @@ const handleFieldLoop = (Source: DATAType): any => {
     } else {
       DATAList.push(
         <Field
-          key={uuidv4()}
+          key={Date.now()}
           Title={field.title}
           Type={field.type}
           Update={(data) => {
